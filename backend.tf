@@ -1,7 +1,6 @@
-# ENABLE WHEN BUCKET IS CREATED
 /*terraform {
   backend "gcs" {
-    bucket = "banded-arcana-369922-bucket"
+    bucket = google_storage_bucket.banded-arcana-369922-bucket.self_link
     prefix = "terraform/state"
   }
 }*/
